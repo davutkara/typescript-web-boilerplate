@@ -29,4 +29,4 @@ But, if you change ts files you should run second code in this file again.
 
 ## typescript
 
-in app folder, uses mvc design pattern
+App folder uses mvc design pattern
