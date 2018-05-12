@@ -30,6 +30,11 @@ gulp.task('hbs', () => {
         .pipe(gulp.dest('build/views'))
 });
 
+gulp.task('public', () => {
+    gulp.src(["app/public/**/*.*"])
+        .pipe(gulp.dest('build/public'))
+});
+
 gulp.task('browser-sync', ['nodemon'], function() {
 	browserSync.init(null, {
 		proxy: "http://localhost:3000",
@@ -57,7 +62,8 @@ gulp.task('nodemon', function (cb) {
 gulp.task('watch', () => {
 	gulp.watch('app/public/css/**/*.css', ['styles']);
     gulp.watch('app/public/js/**/*.js', ['scripts']);
-    gulp.watch('app/views/**/*.hbs', ['hbs']);    
+	gulp.watch('app/views/**/*.hbs', ['hbs']);    
+	gulp.watch('app/public/**/*.*', ['public']);    
 });
 
-gulp.task('default', ['hbs','styles', 'scripts', 'watch','nodemon','browser-sync']);
+gulp.task('default', ['hbs','styles', 'scripts', 'watch','nodemon','browser-sync',"public"]);
