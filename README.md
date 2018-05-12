@@ -16,7 +16,7 @@ To compile typescript run
 npm run build 
 ```
 
-To start gulp nodemon and browsersync run
+To start gulp, nodemon and browsersync run
 
 ```
 npm start 
