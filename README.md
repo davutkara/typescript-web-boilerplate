@@ -1,4 +1,6 @@
-# typescript-express-gulp-browsersync-hbs
+# typescript-web-starter-kit
+
+Ready web starter kit using typscript,nodejs,express,gulp,nodemon,handlebars and browser-sync
 
 Clone the repository 
 
