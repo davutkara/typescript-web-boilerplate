@@ -1,13 +1,13 @@
 {
-  "name": "typescript-davut",
+  "name": "typescript-web-starter-kit",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Ready web starter kit using typscript,nodejs,express,gulp,nodemon,handlebars and browser-sync",
+  "main": "start.js",
   "scripts": {
     "build": "rm -rf build && tsc",
     "start": "nodemon ./build/start.js -e hbs"
   },
-  "author": "",
+  "author": "Davut KARA",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
