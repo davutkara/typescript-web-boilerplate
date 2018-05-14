@@ -5,7 +5,8 @@
   "main": "start.js",
   "scripts": {
     "build": "rm -rf build && tsc",
-    "start": "nodemon ./build/start.js -e hbs"
+    "nodemon": "nodemon ./build/start.js -e hbs",
+    "start" : "gulp"
   },
   "author": "Davut KARA",
   "license": "ISC",
