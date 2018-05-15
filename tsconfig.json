@@ -6,7 +6,6 @@
         "removeComments": true,
         "sourceMap": false,
         "outDir": "./build/",
-        //"mapRoot": "./build_map/",
         "lib": ["es6"]
     },
     "exclude": [
